@@ -21,12 +21,12 @@ linters-settings:
           - github.com/DATA-DOG/go-sqlmock
           - github.com/gavv/httpexpect/v2
           - github.com/go-sql-driver/mysql
-          - github.com/IvanSkripnikov/orders-service/config
-          - github.com/IvanSkripnikov/orders-service/controllers
-          - github.com/IvanSkripnikov/orders-service/database
-          - github.com/IvanSkripnikov/orders-service/helpers
-          - github.com/IvanSkripnikov/orders-service/logger
-          - github.com/IvanSkripnikov/orders-service/models
+          - github.com/IvanSkripnikov/billing-service/config
+          - github.com/IvanSkripnikov/billing-service/controllers
+          - github.com/IvanSkripnikov/billing-service/database
+          - github.com/IvanSkripnikov/billing-service/helpers
+          - github.com/IvanSkripnikov/billing-service/logger
+          - github.com/IvanSkripnikov/billing-service/models
           - io
           - log
           - math

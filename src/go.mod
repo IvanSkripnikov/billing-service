@@ -1,4 +1,4 @@
-module orders-service
+module billing-service
 
 go 1.19
 

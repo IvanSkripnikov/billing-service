@@ -3,7 +3,7 @@ package controllers
 import (
 	"net/http"
 
-	"orders-service/helpers"
+	"billing-service/helpers"
 )
 
 func HealthCheck(w http.ResponseWriter, r *http.Request) {

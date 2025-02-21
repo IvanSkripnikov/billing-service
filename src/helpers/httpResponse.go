@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"orders-service/logger"
+	"billing-service/logger"
 )
 
 type ResponseData map[string]interface{}

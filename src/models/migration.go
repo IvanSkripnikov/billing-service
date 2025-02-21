@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"orders-service/logger"
+	"billing-service/logger"
 )
 
 const MigrationTableName = "migration"
