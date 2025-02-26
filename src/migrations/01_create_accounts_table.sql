@@ -6,3 +6,4 @@ CREATE TABLE IF NOT EXISTS accounts (
     updated BIGINT UNSIGNED,
     active TINYINT DEFAULT 1,
     CONSTRAINT user_unigue UNIQUE (user_id)
+);

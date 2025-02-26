@@ -16,7 +16,7 @@ type route struct {
 var routes = []route{
 	// system
 	newRoute(http.MethodGet, "/health", controllers.HealthCheck),
-	// orders
+	// billing
 	newRoute(http.MethodGet, "/v1/account/list", controllers.GetAccountsListV1),
 	newRoute(http.MethodGet, "/v1/account/get-balance/([0-9]+)", controllers.GetBalanceV1),
 	newRoute(http.MethodPost, "/v1/account/create", controllers.CreateAccountV1),
