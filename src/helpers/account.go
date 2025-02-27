@@ -65,7 +65,7 @@ func GetBalance(w http.ResponseWriter, r *http.Request) {
 		_ = rows.Close()
 	}()
 
-	err = rows.QueryRow(account.ID).Scan(&account.ID, &account.UserID, &account.Balance, &account.Created, &account.Updated, &account.Active)
+	err = rows.QueryRow(account.UserID).Scan(&account.ID, &account.UserID, &account.Balance, &account.Created, &account.Updated, &account.Active)
 	if checkError(w, err, category) {
 		return
 	}
@@ -131,7 +131,7 @@ func ChangeBalance(w http.ResponseWriter, r *http.Request, operation string) {
 		_ = rows.Close()
 	}()
 
-	err = rows.QueryRow(account.ID).Scan(&account.ID, &account.UserID, &account.Balance, &account.Created, &account.Updated, &account.Active)
+	err = rows.QueryRow(account.UserID).Scan(&account.ID, &account.UserID, &account.Balance, &account.Created, &account.Updated, &account.Active)
 	if checkError(w, err, category) {
 		return
 	}
