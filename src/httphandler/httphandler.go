@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"billing-service/helpers"
-	"billing-service/logger"
 
+	logger "github.com/IvanSkripnikov/go-logger"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 )
 

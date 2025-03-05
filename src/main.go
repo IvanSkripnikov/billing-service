@@ -5,8 +5,9 @@ import (
 
 	"billing-service/helpers"
 	"billing-service/httphandler"
-	"billing-service/logger"
 	"billing-service/models"
+
+	logger "github.com/IvanSkripnikov/go-logger"
 )
 
 func main() {

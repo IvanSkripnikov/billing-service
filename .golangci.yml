@@ -25,8 +25,8 @@ linters-settings:
           - github.com/IvanSkripnikov/billing-service/controllers
           - github.com/IvanSkripnikov/billing-service/database
           - github.com/IvanSkripnikov/billing-service/helpers
-          - github.com/IvanSkripnikov/billing-service/logger
           - github.com/IvanSkripnikov/billing-service/models
+          - github.com/IvanSkripnikov/go-logger
           - io
           - log
           - math

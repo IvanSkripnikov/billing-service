@@ -5,8 +5,9 @@ import (
 	"net/http"
 	"strings"
 
-	"billing-service/logger"
 	"billing-service/models"
+
+	logger "github.com/IvanSkripnikov/go-logger"
 )
 
 func GetAccountsList(w http.ResponseWriter, _ *http.Request) {
