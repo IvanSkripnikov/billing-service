@@ -144,16 +144,21 @@ func ChangeBalance(w http.ResponseWriter, r *http.Request, operation string) {
 		NewBalance = account.Balance + Balance
 	}
 
-	currentTimestamp := GetCurrentTimestamp()
-	query = "UPDATE accounts SET balance = ?, updated = ? WHERE user_id = ?"
-	_, err = DB.Query(query, NewBalance, currentTimestamp, account.UserID)
+	response := "success"
+	if NewBalance < 0 {
+		response = "failure"
+	} else {
+		currentTimestamp := GetCurrentTimestamp()
+		query = "UPDATE accounts SET balance = ?, updated = ? WHERE user_id = ?"
+		_, err = DB.Query(query, NewBalance, currentTimestamp, account.UserID)
 
-	if checkError(w, err, category) {
-		return
+		if checkError(w, err, category) {
+			return
+		}
 	}
 
 	data := ResponseData{
-		"message": "success",
+		"response": response,
 	}
 	SendResponse(w, data, category, http.StatusOK)
 }
