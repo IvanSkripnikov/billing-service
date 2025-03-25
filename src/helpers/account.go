@@ -106,7 +106,7 @@ func CreateAccount(w http.ResponseWriter, r *http.Request) {
 }
 
 func ChangeBalance(w http.ResponseWriter, r *http.Request, operation string) {
-	category := "/v1/account/buy"
+	category := "/v1/account/deposit"
 	var account models.Account
 
 	err := json.NewDecoder(r.Body).Decode(&account)
