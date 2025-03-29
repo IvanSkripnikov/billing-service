@@ -72,7 +72,7 @@ func GetBalance(w http.ResponseWriter, r *http.Request) {
 	}
 
 	data := ResponseData{
-		"data": account.Balance,
+		"response": account.Balance,
 	}
 	SendResponse(w, data, category, http.StatusOK)
 }
